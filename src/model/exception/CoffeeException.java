@@ -1,5 +1,9 @@
 package model.exception;
 
-public class CoffeeException {
-
+public class CoffeeException extends Exception{
+	
+	public CoffeeException(String msg) {
+		super(msg);
+	
+	}
 }
