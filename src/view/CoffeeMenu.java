@@ -141,14 +141,15 @@ public class CoffeeMenu {
 					System.out.println("---------------");
 					System.out.print("메뉴 선택 : ");
 					sel = sc.nextInt();
-					if (sel < 4 && sel > 0)
+					if (sel <= 3 && sel > 0)
 						break;
 					System.out.println("없는 메뉴입니다. 다시 선택하세요.");
 				} while (sel > 3 || sel < 0);
 
 				System.out.print("변경할 수량 입력 : ");
 				int cups = sc.nextInt();
-				//
+				cm.insertCoffee(new Coffee(sel, cups));  // 04-07 추가한 코드
+
 				System.out.println("더 변경할  사항이 있습니까? (Y/N)");
 				if (sc.next().toUpperCase().charAt(0) == 'N')
 					break;

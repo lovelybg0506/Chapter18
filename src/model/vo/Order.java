@@ -52,7 +52,7 @@ public class Order {
 	public String toString() {
 		String a = "주문번호 : "+orderNo+"\n";
 		if(ht.containsKey("아메리카노")) {
-			String b="아메리카노"+" 잔 수 : "+ht.get("아메리카노").getCups()+", 소계"+ht.get("아메리카노").getPrice()+"\n";
+			String b="아메리카노"+" 잔 수 : "+ht.get("아메리카노").getCups()+", 소계: "+ht.get("아메리카노").getPrice()+"\n";
 			a+=b;	// String 이라서 덧셈 x // a= a+b
 		}
 		if(ht.containsKey("카페라떼")) {

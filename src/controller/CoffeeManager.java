@@ -89,7 +89,7 @@ public class CoffeeManager {
 			}
 			break;
 		}
-		orderList.set(orderNo - 1, localOd); // 커피종류 수정
+		orderList.set(orderNo-1, localOd); // 커피종류 수정
 		localOd.editprice(); // 가격수정
 	}
 
